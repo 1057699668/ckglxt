@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" build-on-make="true" name="Warehouse_Management_System:war exploded">
+    <output-path>$PROJECT_DIR$</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Warehouse_Management_System/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Warehouse_Management_System" />
+          <element id="dir-copy" path="F:/Apache/apache-tomcat-9.0.34" />
+          <element id="dir-copy" path="$PROJECT_DIR$" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="C:/Program Files (x86)/MySQL/Connector J 8.0/mysql-connector-java-8.0.17.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/servlet-api.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
