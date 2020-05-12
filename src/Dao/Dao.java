@@ -1,9 +1,7 @@
 package Dao;
 
-import Entity.Element;
-import Entity.Supplier;
-import Entity.Transaction;
-import Entity.User;
+import Entity.*;
+import com.mysql.cj.x.protobuf.MysqlxCrud;
 
 import java.security.spec.PSSParameterSpec;
 import java.sql.Connection;
@@ -88,6 +86,24 @@ public class Dao {
         if (pstmt.executeUpdate() > 0) {
             flag = true;
         }
+        return flag;
+    }
+
+    // 更新库存清单功能
+    public boolean update_list(Connection conn, InventoryList inventoryList) throws Exception {
+        boolean flag = false;
+        PreparedStatement pstmt = null;
+        String sql = "";
+        pstmt = conn.prepareStatement(sql);
+        return flag;
+    }
+
+    // 打印订货报表功能
+    public boolean print_order(Connection conn, OrderInformation orderInformation) throws Exception {
+        boolean flag = false;
+        PreparedStatement pstmt = null;
+        String sql = "";
+        pstmt = conn.prepareStatement(sql);
         return flag;
     }
 }

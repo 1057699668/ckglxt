@@ -5,12 +5,59 @@
   Time: 20:44
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-    <title>打印库存清单</title>
-</head>
-<body>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <title>更新库存清单</title>
+    <style type="text/css" media="screen">
+        .center {
+            position: absolute;
+            width: 300px;
+            height: 100px;
+            left: 50%;
+            top: 30%;
+            margin: -100px 0px 0px -100px;
 
+        }
+    </style>
+</head>
+<div class="center">
+    <center>
+        <code><font size="5"><h3 style="color:black">更新库存清单</h3></font></code>
+        <form action="/ckglxt/InventoryList" method="post">
+            <table>
+                <tr>
+                    <td class="alignRight">
+                        <code><font size="3">库存清单(零件)编号:</font></code>
+                    <td>
+                        <input type="text" name="list_number" style="width:150px;height:20px;"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="alignRight">
+                        <code><font size="3">库存量</font></code>
+                    </td>
+                    <td>
+                        <input type="text" name="list_amount" style="width:150px;height:20px"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="alignRight">
+                        <code><font size="3">库存量临界值</font></code>
+                    </td>
+                    <td>
+                        <input type="text" name="critical_value" style="width:150px;height:20px"/>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="提交" class="submit">
+            <input type="reset" value="重置" class="reset">
+        </form>
+    </center>
+</div>
 </body>
 </html>

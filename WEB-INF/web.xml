@@ -14,5 +14,7 @@
         <welcome-file>add_element.jsp</welcome-file>
         <welcome-file>add_supplier.jsp</welcome-file>
         <welcome-file>add_transaction.jsp</welcome-file>
+        <welcome-file>print_inventory_list.jsp</welcome-file>
+        <welcome-file>print_order_information.jsp</welcome-file>
     </welcome-file-list>
 </web-app>

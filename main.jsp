@@ -47,7 +47,7 @@
             </a></font></strong>
             <strong><font size="2"><a href="print_inventory_list.jsp">
                 <h3 style="color:black">
-                    <li>打印库存清单</li>
+                    <li>更新库存清单</li>
                 </h3>
             </a></font></strong>
             <strong><font size="2"><a href="print_order_information.jsp">
